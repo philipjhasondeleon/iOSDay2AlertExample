@@ -10,10 +10,15 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var imgCircus: UIImageView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        imgCircus.image=UIImage(named: "tent")
 
         // Do any additional setup after loading the view.
+        
     }
     
 
