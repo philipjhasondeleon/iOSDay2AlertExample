@@ -15,7 +15,9 @@ class SecondViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        imgCircus.image=UIImage(named: "tent")
+        imgCircus.image = UIImage(named: "home")
+        imgCircus.backgroundColor=UIColor.red
+        imgCircus.backgroundColor=#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
 
         // Do any additional setup after loading the view.
         
