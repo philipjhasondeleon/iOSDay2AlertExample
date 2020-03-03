@@ -23,7 +23,52 @@ class SecondViewController: UIViewController {
         
     }
     
-
+    @IBAction func segImageChange(_ sender: UISegmentedControl)
+    {
+        var imageName = String()
+        switch sender.selectedSegmentIndex {
+        case 0:
+            imageName = "lion"
+        case 1:
+            imageName = "gorilla"
+        case 2:
+        imageName = "elephant"
+        case 3:
+        imageName = "icecream"
+        case 4:
+        imageName = "home"
+        default:
+            print("No image Selected")
+        }
+        self.imgCircus.image = UIImage(named: imageName)
+    }
+    
+    @IBAction func slideChangeImage(_ sender: UISlider)
+    {
+        let n = Int(sender.value)
+        
+        displayImage(index: n)
+    }
+    
+    private func displayImage(index: Int)
+    {
+    var imageName = String()
+    switch index {
+    case 0:
+        imageName = "lion"
+    case 1:
+        imageName = "gorilla"
+    case 2:
+    imageName = "elephant"
+    case 3:
+    imageName = "icecream"
+    case 4:
+    imageName = "home"
+    default:
+        print("No image Selected")
+    }
+    self.imgCircus.image = UIImage(named: imageName)
+    }
     /*
     // MARK: - Navigation
 

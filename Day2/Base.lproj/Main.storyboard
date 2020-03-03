@@ -68,6 +68,30 @@
                                 <rect key="frame" x="20" y="472" width="374" height="327"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Nn-Fk-xsl">
+                                <rect key="frame" x="20" y="150" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Lion"/>
+                                    <segment title="Gorilla"/>
+                                    <segment title="Gorilla"/>
+                                    <segment title="IceCream"/>
+                                    <segment title="Home"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segImageChange:" destination="usQ-8u-PNk" eventType="valueChanged" id="JT3-RU-qKa"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ayd-dM-QM3">
+                                <rect key="frame" x="18" y="247" width="378" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.86578601598739624" green="0.47272980213165283" blue="0.62770253419876099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="slideChangeImage:" destination="usQ-8u-PNk" eventType="valueChanged" id="1ew-gp-j1y"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ydQ-Dc-F87"/>
